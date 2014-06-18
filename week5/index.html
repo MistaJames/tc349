@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header>
+			<h1>Bernard James Tennant</h1>
+			<h2>Graphic Designer, Lansing, MI</h2>
+		</header>
+		<div id="map-location" data-0="background-image:url(img/map.jpg);opacity:.5;" data-500="background-image:url(img/map-pin.jpg);opacity:1" data-800="opacity:.5;">
+		</div>
+		<nav data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#comics">Comics</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<article>
+			<section id="about">
+				<h3>About Me</h3>
+				<p>I'm James Tennant, and I'm a graphic designer. Recently, I have started working with Git and GibHub. I do a lot of things, ranging from web development to drawing. Drawing's been a talent of mine since I was young. Over the years, I've been improving my art skills. It is that talent that lead me to other fields such as graphic design and multimedia. I would love to apply my skills for either freelancing, a design company, or a newspaper syndicate.</p>
+			</section>
+			<section id="portfolio">
+				<h3>Portfolio</h3>
+				<ul class="gallery">
+				<li><a href="img/Blackbird.jpg"><img src="img/thumbnailBlackbird.jpg" width="80" height="80"></a></li>
+				<li><a href="img/Superhero.jpg"><img src="img/thumbnailSuperhero.jpg" width="80" height="80"></a></li>
+				<li><a href="img/Supervixen.jpg"><img src="img/thumbnailSupervixen.jpg" width="80" height="80"></a></li>
+				<li><a href="img/siteD2L.jpg"><img src="img/thumbnailD2L.jpg" width="80" height="80"></a></li>
+				<li><a href="img/mpseasons.jpg"><img src="img/thumbnailSeasons.jpg" width="80" height="80"></a></li>
+				<li><a href="img/sta491promo.jpg"><img src="img/thumbnailPromo.jpg" width="80" height="80"></a></li>
+				</ul>
+			</section>
+			<section id="comics">
+				<h3>Comics</h3>
+				<ul class="gallery">
+				<li><a href="img/ArtistStatementWeb.jpg"><img src="img/thumbnailAS.jpg" width="80" height="80"></a></li>
+				</ul>
+			</section>
+			<section id="contact">
+				<h3>Contact</h3>
+				<ul>
+				<li>E-Mail: tennant8@msu.edu</li>
+				<li>LinkedIn Account: https://www.linkedin.com/pub/jim-tennant/65/b64/341</li>
+				</ul>
+			</section>
+			<footer>
+			2014. By Bernard James Tennant.
+			</footer>
+		</article>
+		
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/skrollr.menu.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		
+		<script type="text/JavaScript">
+		if ($(window).width() > 600) {
+			var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+				//skrollr will smoothly animate to the new position using `animateTo`.
+				animate: true,
+
+				//The easing function to use.
+				easing: 'sqrt',
+
+				//How long the animation should take in ms.
+				duration: function(currentTop, targetTop) {
+					//By default, the duration is hardcoded at 500ms.
+					return 500;
+				},
+			});
+		}
+		</script>
+		
+    </body>
+</html>
